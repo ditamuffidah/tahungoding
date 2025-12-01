@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hitung Luas Persegi Panjang</title>
 
-    <!-- Aesthetic CSS -->
     <style>
         body {
             font-family: "Poppins", sans-serif;
@@ -110,12 +109,10 @@
     </form>
 
     <?php
-        // FUNCTION sesuai materi Pertemuan 2
         function hitungLuas($p, $l) {
             return $p * $l;
         }
 
-        // Jika tombol submit ditekan
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $panjang = $_POST["panjang"];
